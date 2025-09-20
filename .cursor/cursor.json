@@ -1,0 +1,12 @@
+{
+  "context": {
+    "include": [
+      "./aioquiqy",
+      "../aiocryptopay"
+    ],
+    "exclude": [
+      "dist",
+      "__pycache__"
+    ]
+  }
+}
