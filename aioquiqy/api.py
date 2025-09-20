@@ -2,9 +2,6 @@ from .base import BaseClient
 from .const import (
     HTTPMethods,
     Networks,
-    # FiatCurrencies,
-    # CryptoCurrencies,
-    # PaymentStatus,
 )
 
 from .models.payment import (
@@ -15,7 +12,6 @@ from .models.payment import (
     DetailPaymentResponse,
     PreCalculatePaymentResponse,
     CallbackRequest,
-    # CallbackResponse,
 )
 
 from typing import Union, List, Callable, Any, Coroutine

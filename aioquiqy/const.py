@@ -15,31 +15,42 @@ class Networks(StrEnum):
     MAIN_NET = "https://external-api.quiqy.io"
 
 
-class FiatCurrencies(StrEnum):
+class FiatCurrencies:
     """Quiqy fiat currencies"""
 
-    USD = "1"
-    EUR = "2"
-    RUB = "3"
+    USD = 1
+    EUR = 2
+    RUB = 3
 
     @classmethod
-    def values(cls) -> List[str]:
-        return [currency.value for currency in cls]
+    def values(cls) -> List[int]:
+        """Get all fiat currency IDs"""
+        return [cls.USD, cls.EUR, cls.RUB]
 
 
-class CryptoCurrencies(StrEnum):
+class CryptoCurrencies:
     """Quiqy crypto currencies"""
 
-    TRX = "1"
-    USDT_TRC20 = "2"
-    ETH = "3"
-    USDT_ERC20 = "4"
-    BTC = "5"
-    TON = "6"
+    TRX = 1
+    USDT_TRC20 = 2
+    ETH = 3
+    USDT_ERC20 = 4
+    BTC = 5
+    TON = 6
+
+    PAYMENT_SUPPORTED = [TRX, USDT_TRC20, ETH, USDT_ERC20, BTC]
+
+    CALLBACK_SUPPORTED = [TRX, USDT_TRC20, ETH, USDT_ERC20, BTC, TON]
 
     @classmethod
-    def values(cls) -> List[str]:
-        return [currency.value for currency in cls]
+    def payment_supported(cls) -> List[int]:
+        """Get crypto currency IDs supported for payment operations"""
+        return cls.PAYMENT_SUPPORTED
+
+    @classmethod
+    def callback_supported(cls) -> List[int]:
+        """Get crypto currency IDs supported for callbacks"""
+        return cls.CALLBACK_SUPPORTED
 
 
 class PaymentStatus(StrEnum):
@@ -72,4 +83,3 @@ class FeeSide(StrEnum):
 
     MERCHANT = "merchant"
     PAYER = "payer"
-
