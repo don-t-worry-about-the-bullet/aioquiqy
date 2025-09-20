@@ -208,19 +208,6 @@ cd aioquiqy
 poetry install
 ```
 
-### Running Tests
-
-```bash
-poetry run pytest
-```
-
-### Code Formatting
-
-```bash
-poetry run black aioquiqy/
-poetry run isort aioquiqy/
-```
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
