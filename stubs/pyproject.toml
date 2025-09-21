@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aioquiqy-stubs"
-version = "0.2.1"
+version = "0.2.2"
 description = "Type stubs for aioquiqy"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -22,13 +22,13 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "aioquiqy>=0.2.1",
+    "aioquiqy>=0.2.2",
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/aioquiqy"
-Repository = "https://github.com/yourusername/aioquiqy"
-Documentation = "https://github.com/yourusername/aioquiqy#readme"
+Homepage = "https://github.com/don-t-worry-about-the-bullet/aioquiqy"
+Repository = "https://github.com/don-t-worry-about-the-bullet/aioquiqy"
+Documentation = "https://github.com/don-t-worry-about-the-bullet/aioquiqy#readme"
 
 [tool.setuptools]
 packages = ["aioquiqy-stubs"]
