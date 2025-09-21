@@ -27,7 +27,7 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules",
   "Topic :: Office/Business :: Financial",
 ]
-packages = [{ include = "aioquiqy" }]
+packages = [{ include = "aioquiqy", from = "." }]
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
