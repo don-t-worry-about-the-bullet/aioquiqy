@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "aioquiqy"
-version = "0.2.3"
+version = "0.2.4"
 description = "Async Python wrapper for Quiqy payment API"
 authors = ["Λ sobakavosne@protonmail.com"]
 readme = "README.md"
